@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Bootstrap links -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!--jQuery link-->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Font Awesome Glyphicons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Chosen -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Survey Questions</h2>
+    <hr>
+    <h3><strong>About You</strong></h3>
+    <p>Fill out the following questions (honestly) to find out the best match for you.</p>
+    <h4>Name (Required)</h4>
+    <input type="text" id="name" class="form-control" required>
+
+    <h4>Link to Photo (Required)</h4>
+    <input type="text" id="photo" class="form-control" required>
+    <hr>
+
+    <section id="friend-form">
+      <h3><strong>Question 1</strong></h3>
+      <h4>Smooth peanut butter is better than crunchy.</h4>
+        <select class="chosen-select" id="q1">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+      <h3><strong>Question 2</strong></h3>
+      <h4>Fornite is better than PUBG.</h4>
+        <select class="chosen-select" id="q2">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+      <h3><strong>Question 3</strong></h3>
+      <h4>Postman is better than Insomnia.</h4>
+        <select class="chosen-select" id="q3">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+      <h3><strong>Question 4</strong></h3>
+      <h4>You often do things last minute.</h4>
+        <select class="chosen-select" id="q4">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+      <h3><strong>Question 5</strong></h3>
+      <h4>Android is better than Apple/iOS.</h4>
+        <select class="chosen-select" id="q5">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+      <h3><strong>Question 6</strong></h3>
+      <h4>Kraft original or Velveeta?.</h4>
+        <select class="chosen-select" id="q6">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+      <h3><strong>Question 7</strong></h3>
+      <h4>Tuesday/Thursday class section is better than Monday/Wednesday.</h4>
+        <select class="chosen-select" id="q7">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+      <h3><strong>Question 8</strong></h3>
+      <h4>Baker Mayfield is a franchise quarterback.</h4>
+        <select class="chosen-select" id="q8">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+      <h3><strong>Question 9</strong></h3>
+      <h4>Being outside is overrated.</h4>
+        <select class="chosen-select" id="q9">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+      <h3><strong>Question 10</strong></h3>
+      <h4>Cleveland is the greatest city in the US.</h4>
+        <select class="chosen-select" id="q10">
+          <option value=""></option>
+          <option value="1">1 (Strongly Disagree)</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5 (Strongly Agree)</option>
+        </select>
+    </section>
+
+    <br>
+    <br>
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+    <a href="/">Go Back
+    </a>
+    <hr>
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repository</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;
+          </button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  //need to grab user inputs from the form
+$("#submit").on("click", function(event){
+    event.preventDefault();
+
+    var matchUser = $(".modal-title");
+    var modalBody = $(".modal-body");
+    
+    var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: [
+            parseInt($("#q1").val().trim()),
+            parseInt($("#q2").val().trim()),
+            parseInt($("#q3").val().trim()),
+            parseInt($("#q4").val().trim()),
+            parseInt($("#q5").val().trim()),
+            parseInt($("#q6").val().trim()),
+            parseInt($("#q7").val().trim()),
+            parseInt($("#q8").val().trim()),
+            parseInt($("#q9").val().trim()),
+            parseInt($("#q10").val().trim())
+        ]
+    };
+  
+    console.log(newFriend);
+  
+  //Need to take these results and give it a url so that it can be accessed and recognized by the server
+  
+  //then clear the form...
+  var currentURL = window.location.origin;
+  $.post(currentURL + "/api/friends", newFriend,
+    function(data){
+    
+        if(data.name !== undefined) {
+          matchUser.text("Your match...");
+          modalBody.text("<p>...is " + data.name + '!</p><img src="' + data.photo + '"height="200">');
+        }
+  
+        else {
+            matchUser.text("There isn't enough data!");
+            modalBody.text("<p>Unfortunately we couldn't find a match</p>")
+        }
+        $(".modal").modal("toggle");
+      });
+    
+  });
+
+resetTable();
+
+function resetTable(){
+  $("#name").val("");
+  $("#photo").val("");
+  $("#q1").val("");
+  $("#q2").val("");
+  $("#q3").val("");
+  $("#q4").val("");
+  $("#q5").val("");
+  $("#q6").val("");
+  $("#q7").val("");
+  $("#q8").val("");
+  $("#q9").val("");
+  $("#10").val("");
+};
+
+</script>
+
+</body>
+</html>
