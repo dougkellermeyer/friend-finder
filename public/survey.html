@@ -216,8 +216,8 @@ $("#submit").on("click", function(event){
   //Need to take these results and give it a url so that it can be accessed and recognized by the server
   
   //then clear the form...
-  var currentURL = window.location.origin;
-  $.post(currentURL + "/api/friends", newFriend,
+  // var currentURL = window.location.origin;
+  $.post("/api/friends", newFriend,
     function(data){
     
         if(data.name !== undefined) {
